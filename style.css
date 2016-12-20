@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans'; sans-serif;
+    margin: 0 ;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+	clear: both;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+	float: left;
+    font-weight: bold;
+    font-size: 35px;
+    height: 50px;
+}
+header {
+    background-color: #DCDCDC;
+}
+nav {
+	width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center; 
+}
+nav > ul {
+    margin: 0;
+    float: right;
+}
+nav > ul > li {
+    display: inline-block;
+    max-height: 80px;
+    width: 200px;
+    cursor: pointer;
+}
+nav > ul > li:hover {
+    background-color: #8F8FBD;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+.jumbo {
+	height: 100vh;
+    width: 100%;
+    padding-top: 40vh;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url("http://www.thiamistours.gr/datafiles/2202.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.photo {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    text-align: center;
+}
+.photo:last-of-type {
+    margin-right: 0;
+}
+iframe {
+	max-width: 100%;
+ 	margin: 0 auto;
+    display: block;
+    min-height: 300px;
+    text-align: center;
+}
+footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #8F8FBD;
+    text-align: center;
+}
+footer p {
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    margin: 0;  
+}
+@media(max-width: 767px) {
+    .logo {
+    	width: 100%;
+    	font-size: 20px; 
+    	text-align: center;
+        float: left;
+    }
+    .photo {
+    	width: 100%;
+        float: none;
+    }
+    .gallery {
+    	display: none;
+    }
+	 .map {
+ 	width: 100%;
+    }
+    nav > ul {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    nav > ul > li {
+        float: none;
+        width: 100%;
+ }
+
+}
